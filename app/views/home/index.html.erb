@@ -1,0 +1,47 @@
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-12">
+      <div class="card shadow-lg p-3 mb-5 bg-white rounded zoom">
+       <!-- Card about me -->
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-3">
+                 <%= image_tag 'me', class: 'img-thumbnail'%>
+            </div>
+
+            <div class="col-9">
+                <h1>Julio César Noguera López</h1><hr>
+                <p>Actually Course Director at <a href="https://platzi.com" target="_blank">platzi.com</a><br>
+                    Paraguayan 🇵🇾<br>
+                    <strong>Web Developer</strong><br>
+                    <i>'Ani rekyhyjéti rejavyrô guarâ, Ekyhyje nereñeha'âirô guarâ'</i></p>
+
+                <section class="margin-top">
+                    <%= link_to 'Curriculum Vitae' %> | <%= link_to 'About me' %> | <%= link_to 'Portafolio' %> | <%= link_to 'Blog', posts_path %>
+                </section>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Social media -->
+      <section class="text-center">
+            <%= link_to "https://www.facebook.com/julio.noguera.334", target: "_blank", class: 'sunderline' do %>
+                <%= image_tag 'facebook', width: 50, class: 'zoom padding-10' %>
+            <% end %>
+
+            <%= link_to "https://www.linkedin.com/in/noguerajulio/", target: "_blank", class: 'sunderline' do %>
+                <%= image_tag 'linkeind', width: 50, class: 'zoom padding-10' %>
+            <% end %>
+
+            <%= link_to "https://www.instagram.com/noguerajulioces", target: "_blank", class: 'sunderline' do %>
+                <%= image_tag 'instagram', width: 50, class: 'zoom padding-10' %>
+            <% end %>
+
+            <%= link_to "https://github.com/NogueraJulio24", target: "_blank", class: 'sunderline' do %>
+                <%= image_tag 'github', width: 50, class: 'zoom padding-10' %>
+            <% end %>
+          </section>
+    </div>   
+  </div>  
+</div>
