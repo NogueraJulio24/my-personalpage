@@ -161,6 +161,3 @@ production:
       database: database_for_production
       hosts:
         - localhost:27017
-      uri: <%= ENV['MONGOLAB_URI'] %>
-      options:
-        connect_timeout: 15
