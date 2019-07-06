@@ -10775,3 +10775,10 @@ Completed 200 OK in 99ms (Views: 91.5ms)
 
 MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70230632199340 type=uuid data=0x8a48f02df73b4aa3...>}]}
 MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started GET "/" for ::1 at 2019-07-05 23:32:55 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3378.1ms)
+Completed 200 OK in 3605ms (Views: 3593.8ms)
+
+
