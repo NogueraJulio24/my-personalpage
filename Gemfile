@@ -63,6 +63,5 @@ gem 'bootstrap'
 gem 'jquery-rails'
 
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
-gem 'aws-sdk-s3', '~> 1.0.0.rc2'
 
 gem 'devise'

@@ -10611,3 +10611,167 @@ Completed 200 OK in 85ms (Views: 80.0ms)
 
 MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70179558342060 type=uuid data=0x394682a9d1124bea...>}]}
 MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started GET "/posts/5d186e4cd778c2e197e7c8dc" for ::1 at 2019-07-05 00:45:27 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5d186e4cd778c2e197e7c8dc"}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x70170969573700 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70170977779000 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-07-05 05:45:27 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.007416>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{"_id"=>BSON::ObjectId('5d186e4cd778c2e197e7c8dc')}, "lsid"=>{"id"=><BSON::Binary:0x70170971485280 type=uuid data=0xa626ca973ea24562...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.004s
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 3761ms (Views: 3699.2ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-05 00:45:34 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70170971485280 type=uuid data=0xa626ca973ea24562...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.007s
+  Rendered posts/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 91ms (Views: 84.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-05 00:45:38 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 75ms (Views: 69.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-05 00:45:50 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70170971485280 type=uuid data=0xa626ca973ea24562...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.001s
+  Rendered posts/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 72ms (Views: 66.9ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-05 00:58:42 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70170971485280 type=uuid data=0xa626ca973ea24562...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.001s
+  Rendered posts/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 116ms (Views: 109.5ms)
+
+
+Started GET "/posts/5d186b5ad778c2e197e7c8db" for ::1 at 2019-07-05 00:58:45 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5d186b5ad778c2e197e7c8db"}
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{"_id"=>BSON::ObjectId('5d186b5ad778c2e197e7c8db')}, "lsid"=>{"id"=><BSON::Binary:0x70170971485280 type=uuid data=0xa626ca973ea24562...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.001s
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 61ms (Views: 49.5ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-05 00:58:47 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70170971485280 type=uuid data=0xa626ca973ea24562...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.001s
+  Rendered posts/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 90ms (Views: 84.5ms)
+
+
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70170971485280 type=uuid data=0xa626ca973ea24562...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.002s
+Started GET "/" for ::1 at 2019-07-05 22:07:33 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (544.9ms)
+Completed 200 OK in 685ms (Views: 659.7ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-05 22:07:50 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x70230585918240 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70230585797860 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-07-06 03:07:51 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003876>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70230632199340 type=uuid data=0x8a48f02df73b4aa3...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.003s
+  Rendered posts/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 85ms (Views: 65.7ms)
+
+
+Started GET "/posts/5d18698cd778c2e197e7c8d9" for ::1 at 2019-07-05 22:08:04 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5d18698cd778c2e197e7c8d9"}
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{"_id"=>BSON::ObjectId('5d18698cd778c2e197e7c8d9')}, "lsid"=>{"id"=><BSON::Binary:0x70230632199340 type=uuid data=0x8a48f02df73b4aa3...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.003s
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 98ms (Views: 78.8ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-05 22:08:05 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70230632199340 type=uuid data=0x8a48f02df73b4aa3...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.002s
+  Rendered posts/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 123ms (Views: 114.8ms)
+
+
+Started GET "/posts/5d18698cd778c2e197e7c8d9" for ::1 at 2019-07-05 22:08:06 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5d18698cd778c2e197e7c8d9"}
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{"_id"=>BSON::ObjectId('5d18698cd778c2e197e7c8d9')}, "lsid"=>{"id"=><BSON::Binary:0x70230632199340 type=uuid data=0x8a48f02df73b4aa3...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.002s
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 76ms (Views: 60.0ms)
+
+
+Started GET "/posts/5d18698cd778c2e197e7c8d9/edit" for ::1 at 2019-07-05 22:08:07 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5d18698cd778c2e197e7c8d9"}
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{"_id"=>BSON::ObjectId('5d18698cd778c2e197e7c8d9')}, "lsid"=>{"id"=><BSON::Binary:0x70230632199340 type=uuid data=0x8a48f02df73b4aa3...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.002s
+Completed 401 Unauthorized in 28ms
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-05 22:08:07 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 73ms (Views: 70.3ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-05 22:14:38 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+MONGODB | localhost:27017 | me_development.find | STARTED | {"find"=>"posts", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70230632199340 type=uuid data=0x8a48f02df73b4aa3...>}}
+MONGODB | localhost:27017 | me_development.find | SUCCEEDED | 0.004s
+  Rendered posts/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 169ms (Views: 157.1ms)
+
+
+Started GET "/" for ::1 at 2019-07-05 22:40:42 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 99ms (Views: 91.5ms)
+
+
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70230632199340 type=uuid data=0x8a48f02df73b4aa3...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
